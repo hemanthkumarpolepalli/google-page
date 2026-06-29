@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: azure;
+}
+.rightSide ul {
+    list-style: none;
+    display: flex;
+}
+.rightSide ul li {
+    padding: 10px;
+    margin: 10px;
+}
+.rightSide ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.rightSide {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+.rightSide .sign-in {
+    padding: 5px;
+    margin: 8px;
+    margin-top: -20px;
+
+}
+.rightSide .menu{
+    border: none;
+    font-size: 18px;
+}
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+form input{
+    padding: 10px;
+    width: 500px;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+}
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: inherit;
+    background-color: #fff;
+    margin-left: -20px;
+}
+.image {
+    position:absolute;
+    top: calc(50% - 130px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image img {
+    width: 100%;
+    height: 100%;
+}
+.Search {
+    position:absolute;
+    top: calc(50% + 80px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+.Search ul {
+    display: flex;
+
+}
+.Search li {
+    list-style: none;
+    padding: 15px;
+}
+.Search li a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width:1050px) {
+    form {
+        width: calc(100% - 220px);
+    }
+    form input {
+        width: calc(100% - 30px);
+
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    form {
+        width: calc(100% - 100px);
+    }
+    form input {
+        width: calc(100% - 30px);
+
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .Search ul {
+        display: block;
+    }
+    .rightSide ul li a {
+        display: none;
+    }
+    
+}
